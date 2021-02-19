@@ -18,8 +18,7 @@ public class SpawnObjects : MonoBehaviour
         while(_canSpawnGarbage)
         {
             yield return new WaitForSeconds(Random.Range(3f, 7f));
-            Vector3 behindPortal = new Vector3(transform.position.x, transform.position.y, transform.position.z + 1);
-            GameObject garbagePrefab = Instantiate(garbage, behindPortal, transform.rotation);
+            GameObject garbagePrefab = Instantiate(garbage, transform.position + transform.forward, transform.rotation, transform.parent);
         }
     }
 }

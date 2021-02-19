@@ -15,7 +15,12 @@ public class MoveGarbage : MonoBehaviour
 
     private void Update()
     {
-        rb.AddForce(Vector3.back * speed * Time.deltaTime);
+        rb.AddForce(transform.parent.forward * -speed * Time.deltaTime);
         transform.Rotate(new Vector3(15, 30, 45) * rotateSpeed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(transform.gameObject);
     }
 }
