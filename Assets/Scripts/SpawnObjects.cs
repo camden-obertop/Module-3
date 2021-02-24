@@ -8,6 +8,9 @@ public class SpawnObjects : MonoBehaviour
 
     private bool _canSpawnGarbage = true;
 
+    public float minTime;
+    public float maxTime;
+
     private void Start()
     {
         StartCoroutine(SpawnGarbage());
@@ -17,7 +20,7 @@ public class SpawnObjects : MonoBehaviour
     {
         while(_canSpawnGarbage)
         {
-            yield return new WaitForSeconds(Random.Range(3f, 7f));
+            yield return new WaitForSeconds(Random.Range(minTime, maxTime));
             GameObject garbagePrefab = Instantiate(garbage, transform.position + transform.forward, transform.rotation, transform.parent);
         }
     }

@@ -17,10 +17,10 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/WindowHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/Breakable Windows/Scripts/BreakableWindow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnObjects.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoveGarbage.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BreakableWindowCustom.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WindowHealth.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnObjects.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owOvPVJYSl8bzcY4ble4IIY45k" />
@@ -64,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614194417149</updated>
-      <workItem from="1614194429639" duration="4568000" />
+      <workItem from="1614194429639" duration="5427000" />
     </task>
     <servers />
   </component>
