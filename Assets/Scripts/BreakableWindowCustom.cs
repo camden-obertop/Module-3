@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [AddComponentMenu("Breakable Windows/Breakable Window")]
 [RequireComponent(typeof(AudioSource))]
-public class BreakableWindow : MonoBehaviour {
+public class BreakableWindowCustom : MonoBehaviour {
 
     
     [Tooltip("Layer should be TransparentFX or your own layer for breakable windows.")]
@@ -34,7 +36,6 @@ public class BreakableWindow : MonoBehaviour {
 
     [Space]
     public AudioClip breakingSound;
-
 
     [HideInInspector]
     public bool isBroken = false;
@@ -236,18 +237,7 @@ public class BreakableWindow : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (useCollision == true)
-        {
-            if (health > 0)
-            {
-                health -= col.impulse.magnitude;
-                if (health < 0)
-                {
-                    health = 0;
-                    breakWindow();
-                }
-            }
-            else breakWindow();
-        }        
+        transform.parent.GetComponent<WindowHealth>().health--;
+        transform.parent.GetComponent<WindowHealth>().UpdateWindows();
     }
 }
