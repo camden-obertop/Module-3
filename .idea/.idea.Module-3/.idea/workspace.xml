@@ -21,6 +21,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BreakableWindowCustom.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WindowHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnObjects.cs" />
+      <option value="$PROJECT_DIR$/Assets/MovePlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1owOvPVJYSl8bzcY4ble4IIY45k" />
@@ -65,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614194417149</updated>
       <workItem from="1614194429639" duration="5427000" />
+      <workItem from="1614313326732" duration="2023000" />
     </task>
     <servers />
   </component>
